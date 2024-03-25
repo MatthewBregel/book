@@ -1,0 +1,426 @@
+@font-face {
+	font-family: 'GolosText-VariableFont_wght';
+	src: url(../fonts/GolosText-VariableFont_wght.ttf);
+}
+
+.square {
+	width: 800px;
+	height: 1200px;
+	background: #F1E7C3;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+
+.circle {
+	width: 55px;
+	height: 55px;
+	background: solid transparent;
+	border-radius: 100%;
+	position: absolute;
+	left: 25px;
+	top: 110px;
+	border: 2px solid black;
+}
+
+.cover {
+	font-family: GolosText-VariableFont_wght;
+	font-size: 26px;
+	width: 2000px;
+	height: 300px;
+	position: absolute;
+	left: 200px;
+	top: 200px;
+}
+
+.price {
+	font-family: GolosText-VariableFont_wght;
+	font-size: 9px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 27px;
+	top: 115px;
+	animation: price_move 4s infinite;
+}
+
+/*@keyframes price_move {
+		0% { transform: rotate(0deg); }
+		25% { transform: rotate(90deg); }
+		50% { transform: rotate(180deg); }
+		75% { transform: rotate(270deg); }
+		100% { transform: rotate(360deg); }
+}*/
+
+.name {
+	font-family: GolosText-VariableFont_wght;
+	font-size: 23px;
+	width: 2000px;
+	height: 300px;
+	position: absolute;
+	left: 25px;
+	top: 5px;
+	line-height: 10px;
+	color: #734193;
+	animation: name_move infinite alternate 2s;
+}
+
+@keyframes name_move {
+	0% { left: 0px; }
+	100% { left: 75px; }
+}
+
+.name2 {
+	font-family: GolosText-VariableFont_wght;
+	font-size: 23px;
+	width: 2000px;
+	height: 300px;
+	position: absolute;
+	left: 25px;
+	top: 50px;
+	line-height: 10px;
+	color: #783D21;
+	animation: name2_move infinite alternate 3s;
+}
+
+@keyframes name2_move {
+	0% { left: 0px; }
+	100% { left: 100px; }
+}
+
+.publisher {
+	font-family: GolosText-VariableFont_wght;
+	font-size: 7px;
+	width: 2000px;
+	height: 300px;
+	position: absolute;
+	left: 575px;
+	top: 10px;
+	animation: publisher ease-in-out infinite 4s;
+}
+
+@keyframes publisher {
+	0% { top: 10px; }
+	50% { top: 350px }
+	100% { top: 10px; }
+}
+
+.author {
+	font-family: GolosText-VariableFont_wght;
+	font-size: 8px;
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	left: -80px;
+	top: 1050px;
+	transform: rotate(-90deg);
+}
+
+
+
+.part {
+	width: 0px;
+	height: 0px;
+	border-top: 200px solid #69210F;
+	border-left: 200px solid #69210F;
+	border-right: 200px solid #6C3C17;
+	border-bottom: 200px solid #6C3C17;
+	position: absolute;
+	top: 800px;
+	left: 400px;
+	animation: part 8s forwards;
+}
+
+@keyframes part {
+	0% {border-bottom: 200px solid yellow;}
+	25% {border-bottom: 200px solid #6C3C17;}
+	26% {border-right: 200px solid yellow;}
+	50% {border-right: 200px solid #6C3C17;}
+	50% {border-top: 200px solid yellow;}
+	75% {border-top: 200px solid #69210F;}
+	76% {border-left: 200px solid yellow;}
+	100% {border-left: 200px solid #69210F}
+}
+
+.party {
+	width: 0px;
+	height: 0px;
+	border-top: 200px solid #DB3127;
+	border-left: 200px solid transparent;
+	border-right: 200px solid #DB3127;
+	border-bottom: 200px solid transparent;
+	position: absolute;
+	left: 0px;
+	top: 800px;
+	animation: party 4s forwards;
+	animation-delay: 7s
+}
+
+@keyframes party {
+	0% {border-bottom: 200px solid transparent;}
+	25% {border-bottom: 200px solid transparent;}
+	26% {border-right: 200px solid yellow;}
+	50% {border-right: 200px solid #DB3127;}
+	50% {border-left: 200px solid transparent;}
+	75% {border-left: 200px solid transparent;}
+	76% {border-top: 200px solid yellow;}
+	100% {border-top: 200px solid #DB3127}
+}
+
+.school {
+	width: 0px;
+	height: 0px;
+	border-top: 200px solid #6C3C17;
+	border-left: 200px solid #69210F;
+	border-right: 200px solid #6C3C17;
+	border-bottom: 200px solid #69210F;
+	position: absolute;
+	left: 400px;
+	top: 400px;
+	animation: school 8s forwards;
+	animation-delay: 10.5s
+}
+
+@keyframes school {
+	0% {border-bottom: 200px solid yellow;}
+	25% {border-bottom: 200px solid #69210F;}
+	26% {border-right: 200px solid yellow;}
+	50% {border-right: 200px solid #6C3C17;}
+	50% {border-top: 200px solid yellow;}
+	75% {border-top: 200px solid #6C3C17;}
+	76% {border-left: 200px solid yellow;}
+	100% {border-left: 200px solid #69210F}
+}
+
+.work {
+	width: 0px;
+	height: 0px;
+	border-top: 200px solid #3F1713;
+	border-left: 200px solid #66317F;
+	border-right: 200px solid #6E1918;
+	border-bottom: 200px solid #6E1918;
+	position: absolute;
+	left: 0px;
+	top: 400px;
+	animation: work 8s forwards;
+	animation-delay: 16.5s
+}
+
+@keyframes work {
+	0% {border-right: 200px solid yellow;}
+	25% {border-right: 200px solid #6E1918;}
+	26% {border-bottom: 200px solid yellow;}
+	50% {border-bottom: 200px solid #6E1918;}
+	50% {border-left: 200px solid yellow;}
+	75% {border-left: 200px solid #66317F;}
+	76% {border-top: 200px solid yellow;}
+	100% {border-top: 200px solid #3F1713}
+}
+
+.movie {
+	width: 0px;
+	height: 0px;
+	border-top: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-right: 100px solid #6C3C17;
+	border-bottom: 100px solid #6C3C17;
+	position: absolute;
+	left: 0px;
+	top: 200px;
+	animation: movie 4s forwards;
+	animation-delay: 23s
+}
+
+@keyframes movie {
+	0% {border-left: 100px solid transparent;}
+	25% {border-left: 100px solid transparent;}
+	26% {border-top: 100px solid transparent;}
+	50% {border-top: 100px solid transparent;}
+	50% {border-bottom: 100px solid yellow;}
+	75% {border-bottom: 100px solid #6C3C17;}
+	76% {border-right: 100px solid yellow;}
+	100% {border-right: 100px solid #6C3C17}
+}
+
+.breath {
+	width: 0px;
+	height: 0px;
+	border-top: 100px solid #DE3127;
+	border-left: 100px solid #6A2210;
+	border-right: 100px solid #701718;
+	border-bottom: 100px solid #6A2210;
+	position: absolute;
+	left: 200px;
+	top: 200px;
+	animation: breath 8s forwards;
+	animation-delay: 27s
+}
+
+@keyframes breath {
+	0% {border-left: 100px solid yellow;}
+	25% {border-left: 100px solid #6A2210;}
+	26% {border-top: 100px solid yellow;}
+	50% {border-top: 100px solid #DE3127;}
+	50% {border-bottom: 100px solid yellow;}
+	75% {border-bottom: 100px solid #6A2210;}
+	76% {border-right: 100px solid yellow;}
+	100% {border-right: 100px solid #701718}
+}
+
+.deep {
+	width: 0px;
+	height: 0px;
+	border-top: 50px solid #744099;
+	border-left: 50px solid #744099;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	position: absolute;
+	left: 400px;
+	top: 300px;
+	animation: deep 6s forwards;
+	animation-delay: 33.5s
+}
+
+@keyframes deep {
+	0% {border-bottom: 50px solid transparent;}
+	25% {border-bottom: 50px solid transparent;}
+	26% {border-right: 50px solid transparent;}
+	50% {border-right: 50px solid transparent;}
+	50% {border-left: 50px solid yellow;}
+	75% {border-left: 50px solid #744099;}
+	76% {border-top: 50px solid yellow;}
+	100% {border-top: 50px solid #744099}
+}
+
+.calico {
+	width: 0px;
+	height: 0px;
+	border-top: 50px solid #702113;
+	border-left: 50px solid #471A16;
+	border-right: 50px solid #72411A;
+	border-bottom: 50px solid #471A16;
+	position: absolute;
+	left: 400px;
+	top: 200px;
+	animation: calico 8s forwards;
+	animation-delay: 37.5s
+}
+
+@keyframes calico {
+	0% {border-bottom: 50px solid yellow;}
+	25% {border-bottom: 50px solid #471A16;}
+	26% {border-right: 50px solid yellow;}
+	50% {border-right: 50px solid #72411A;}
+	50% {border-left: 50px solid yellow;}
+	75% {border-left: 50px solid #471A16;}
+	76% {border-top: 50px solid yellow;}
+	100% {border-top: 50px solid #702113}
+}
+
+
+.set {
+	width: 0px;
+	height: 0px;
+	border-top: 50px solid transparent;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid #E03227;
+	position: absolute;
+	left: 400px;
+	top: 100px;
+	animation: set 4s forwards;
+	animation-delay: 44s
+}
+
+@keyframes set {
+	0% {border-bottom: 50px solid yellow;}
+	25% {border-bottom: 50px solid #E03227;}
+	26% {border-right: 50px solid transparent;}
+	50% {border-right: 50px solid transparent;}
+	50% {border-left: 50px solid transparent;}
+	75% {border-left: 50px solid transparent;}
+	76% {border-top: 50px solid transparent;}
+	100% {border-top: 50px solid transparent}
+}
+
+.logo {
+	position: absolute;
+	left: 600px;
+	top: 38px;
+	width: 150px;
+	height: auto;
+	animation: logo_move 5s ease-in-out infinite;
+}
+
+@keyframes logo_move {
+		0% { transform: rotate(0deg); }
+		25% { transform: rotate(90deg); }
+		50% { transform: rotate(180deg); }
+		75% { transform: rotate(270deg); }
+		100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
